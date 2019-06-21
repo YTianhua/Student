@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--这里是一个listview布局文件，用于展示学生的申请进度
+    注意：applyProcess既是LitePal的文件，也是ListView的文件，正在尝试
+    -->
+    <!-- 包括：编号作为主码，此处不显示
+    （1）申请单编号
+    （2）辅导员是否通过
+    （3）教务处是否通过
+    （4）安排的教室
+    （5）安排的时间段-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/applyTableNum"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_height="wrap_content"  />
+    <TextView
+        android:id="@+id/isInsPass"
+        android:layout_width="0dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/isOfficePass"
+        android:layout_width="0dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/arrangeClass"
+        android:layout_width="0dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/arrangeHour"
+        android:layout_width="0dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#00f"
+        />
+</LinearLayout>

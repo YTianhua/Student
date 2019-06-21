@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--    int applyId;//审查序号，作为主码不重样
+        int insNum;//辅导员工号
+        String applyTableNum;//申请单编号
+        String isInsPass;//辅导员是否通过-->
+    <!--ExpandableListView实现
+    -->
+    <!--第一部分：用于展示正在申请的表-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="待审核..."
+        android:gravity="center"
+        android:background="#AF1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="学号"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"/>
+        <TextView
+            android:text="姓名"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="专业"
+            android:layout_width="0dp"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#F00"
+        />
+    <ListView
+        android:background="#e0ffffff"
+        android:id="@+id/incCheckListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:clickable="true">
+
+    </ListView>
+    <ImageView
+        android:id="@+id/aa"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/nullimage"
+        android:visibility="visible"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+     <dbname value="FirstGroup" />
+      <version value="3" />
+       <list>
+           <mapping class="com.yth520web.student.StudentInformation"></mapping>
+           <mapping class="com.yth520web.student.InstructorInformation"></mapping>
+           <mapping class="com.yth520web.student.StudentApply"></mapping>
+           <mapping class="com.yth520web.student.Office"></mapping>
+           <mapping class="com.yth520web.student.InstructorCheck"></mapping>
+           <mapping class="com.yth520web.student.ApplyTable"></mapping>
+           <mapping class="com.yth520web.student.ApplyProcess"></mapping>
+       </list>
+</litepal>

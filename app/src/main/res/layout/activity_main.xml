@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/bg"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <!--需要（1）背景为西南财经大学校徽
+        （2）账号和密码输入框
+        （3）学生和辅导员的登陆
+        -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:gravity="center|bottom"
+        android:orientation="horizontal">
+        <!--账号和密码-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="5dp"
+            android:background="#e0FFFFFF"
+            android:text="账号:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_marginBottom="2dp"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:background="#e0FFFFFF"
+            android:inputType="" />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+        <!--账号和密码-->
+        <TextView
+            android:background="#e0FFFFFF"
+            android:layout_marginTop="18dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="4dp"
+
+            android:text="密码:"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/password"
+            android:background="#e0FFFFFF"
+            android:layout_marginTop="21dp"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:inputType="textPassword"
+            />
+        <!--登陆按钮-->
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/redioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/radioStudent"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:button="@null"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#82b1ff"
+            android:text="学生登陆"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/radioInstratir"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:button="@null"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:layout_margin="10dp"
+            android:background="#4a148c"
+            android:gravity="center"
+            android:text="辅导员登陆" />
+    </RadioGroup>
+</LinearLayout>

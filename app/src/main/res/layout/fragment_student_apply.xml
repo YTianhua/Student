@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp"
+    android:orientation="vertical"
+    tools:context=".StudentApplyFragment">
+
+    <!--用于学生发起申请-->
+<!--    申请包括：自动生成的申请单编号
+    （1）根据所在学院自动选择辅导员
+    （2）申请日期
+    （3）申请时长
+    （4）申请原因
+    （5）申请的总人数-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/hello_stu"
+        android:text="Hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="辅导员:"
+        android:gravity="center"/>
+    <EditText
+        android:hint="此处填入辅导员工号"
+        android:id="@+id/stu_ins"
+        android:textSize="18sp"
+        android:paddingLeft="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="申请日期:"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/applyDay"
+            android:textSize="18sp"
+            android:text=""
+
+            android:paddingLeft="4dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="申请时长:"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/applyHour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:paddingLeft="4dp"
+            android:textSize="18sp"
+            android:text="" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="#000"
+        android:text="申请原因:"
+        android:layout_marginLeft="18dp"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/applyReason"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="2"
+        android:textColor="#000"
+        android:hint="   在此填入具体原因"
+
+        android:layout_marginTop="15dp"
+        android:gravity="top"
+        android:textSize="18sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="申请人数:"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/peopleNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:paddingLeft="4dp"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:background="#888"
+        android:layout_margin="25dp"
+        android:textSize="33sp"
+        android:onClick="student_apply"
+        android:gravity="center|bottom"
+        />
+    </LinearLayout>
+
+</LinearLayout>
